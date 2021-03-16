@@ -100,3 +100,6 @@ protocol someProto{
     func cool()
 
 }
+
+//Protocols can have associated types.
+

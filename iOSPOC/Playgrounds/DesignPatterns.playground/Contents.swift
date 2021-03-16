@@ -17,9 +17,10 @@ var str = "Hello, playground for design patterns"
  The Singleton design pattern ensures that only one instance exists for a given class and that there’s a global access point to that instance. It usually uses lazy loading to create the single instance when it’s needed the first time.
  
 */
+
 final class SomeClass{
     static let shared = SomeClass()
-    var someProperty:String = ""
+    var someProperty:String = "therahulgoel"
     private init(){
     }
 }

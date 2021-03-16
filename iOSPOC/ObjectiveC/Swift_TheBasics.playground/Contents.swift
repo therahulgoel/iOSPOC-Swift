@@ -99,3 +99,5 @@ var name:String? = "Rahul" //Optionals
 
 //Don’t use an implicitly unwrapped optional when there’s a possibility of a variable becoming nil at a later point. Always use a normal optional type if you need to check for a nil value during the lifetime of a variable.
 
+
+

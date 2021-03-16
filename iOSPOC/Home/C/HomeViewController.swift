@@ -28,7 +28,6 @@ class HomeViewController: TRGBaseViewController {
 
 extension HomeViewController{
     func doSomeStuff(){
-        testRetunCharacters()
     }
 }
 
@@ -88,68 +87,3 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         registerTableViewCell()
     }
 }
-
-
-//Test Programs
-extension HomeViewController{
- 
-    func retunCharacters(str:String, flag:Int)->String{
-        let arr:[Character] = Array(str)
-        var i = 0
-        var result = ""
-        while i < arr.count {
-            if flag == 0{
-                if (i + 1 ) % 2 == 0{//Even
-                    result = "\(result)\(arr[i])"
-                }
-            }else{
-                if (i + 1 ) % 2 != 0{ //Odd
-                    result = "\(result)\(arr[i])"
-                }
-            }
-            i += 1
-        }
-        return result
-    }
-    
-    func testRetunCharacters(){
-        print(retunCharacters(str: "TRACXN", flag: 0))
-        print(retunCharacters(str: "TRACXN", flag: 1))
-        printNumbers()
-    }
-    
-    
-}
-
-func printNumbers(){
-    var i = 1
-    var result : String = ""
-    while(i<=100)
-    {
-        
-        if(i%15 == 0){
-            result = "\(result) FizzBuzz "
-        }
-        
-            else if (i%3 == 0)
-            {
-                result = "\(result) Fizz "
-            }
-            else if (i%5 == 0){
-                result = "\(result) Buzz "
-            }
-        
-            else{
-                result = "\(result) \(i) "
-            }
-        
-        i = i+1
-    }
-    print(result)
-}
-
-
-
-
-
-

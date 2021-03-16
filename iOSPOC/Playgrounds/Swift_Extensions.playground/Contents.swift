@@ -25,7 +25,7 @@ var str = "Hello, playground Extensions"
 
 extension String {
     mutating func appendMarsLandingMessage(){
-         self.append("Day has finally arrived, Welcome to our new Home Mars")
+         self.append("Day has finally arrived, Welcome to our new Home Mars Rahul !!!")
     }
 }
 

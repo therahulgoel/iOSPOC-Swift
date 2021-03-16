@@ -115,3 +115,44 @@ class Falcon9:Rocket{
  In Initialization First phase : all the newly added properties are inialized starting from subclass upto the utmost superclass,
  In Phase Two : It then initialized all the other overridden properties and stuff
  */
+
+
+//*****************
+
+class AA{
+    let name = "Therahulgoel"
+}
+
+class BB{
+    weak var anotherObject:AA?
+    
+    func someFunc(){
+        anotherObject = AA()
+        print(anotherObject?.name  ?? "MARS")
+    }
+}
+
+var b = BB()
+b.someFunc()
+
+//************************
+
+class BCD{
+    func getABC()->String{
+        return "MARS"
+    }
+}
+
+class SomeClass{
+    var bcd:BCD? = BCD()
+}
+
+var objSomeClass = SomeClass()
+var bcd = objSomeClass.bcd
+
+objSomeClass.bcd = nil
+
+print(bcd?.getABC() ?? "bcd nil")
+print(objSomeClass.bcd?.getABC() ?? "objSomeClass.bcd nil")
+
+//************************

@@ -72,7 +72,6 @@ print(mapped)
 // [1, 2, nil, nil, 5] - Two nil values as "three" and "four" are strings.
 
 
-//**** REDUCE ****
 
 //Implementing Your Own Map Function :
 //Map function is basiclly applying the transform function provided by user and returning the result for the same.
@@ -88,6 +87,8 @@ extension Sequence{
 result  = arr.customMap { (element) -> Int in
     return element*2
 }
+
+
 result  = arr.customMap { (element) -> Int in
     return element+2
 }

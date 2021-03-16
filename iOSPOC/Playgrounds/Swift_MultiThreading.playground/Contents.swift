@@ -68,6 +68,20 @@ let operation:Operation = Operation()
 
 //Adding depedencies in operations
 
+//What is the output of the below
+
+let q = DispatchQueue(label: "sss")
+q.async {
+    DispatchQueue.main.async {
+        print(1)
+    }
+    DispatchQueue.main.async {
+        print(2)
+    }
+}
+q.sync {
+    print(3)
+}
 
 
 
